@@ -2,11 +2,10 @@
 
 In this work we look at the restaurant inspection data from New York City. The entire analysis is done using SQL. The dataset contains 5 tables:
 
-1.   `webextract`: main table containing data about the ID, name, location (including zipcode and borough), primary cuisine served, inspection date, violation code, score and grade of the restaurants.
-2.   `cuisine`: secondary table containing the code and name of the cuisine served by the restaurant.
-3.  `action`: table containing description of action taken against violations.
-4. `violation`: table containing description of violations committed by restaurants.
-5. `boroughs:` table containing id and names of 5 boroughs of NYC.
+1. `webextract`: main table containing data about the ID, name, location (including zipcode and borough), primary cuisine served, inspection date, violation code, score and grade of the restaurants. In total there are 16 columns and 531,935 rows.
+2. `cuisine`: secondary table containing the code and name of the cuisine served by the restaurant. In total there were 85 different cuisines.
+3. `violation`: table containing description of violations committed by restaurants. The total number of violation codes were 174.
+4. `boroughs:` table containing id and names of 5 boroughs of NYC.
 
 The goal of the work is to look at the areas in the city by zipcodes and boroughs that have the highest and lowest inspection scores. We then look at the cuisines that have the highest and lowest number of violations. Finally, we look at the most disproportionate violations in cuisines, i.e. the violations that occur higher than usual in certain cuisines.
 
